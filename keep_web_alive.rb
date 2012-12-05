@@ -19,7 +19,7 @@ loop do
       ip = RestClient.get(user_config[:ip])
       puts ip unless user_config[:silent]
    end
-   sleep(user_config[:sleep])
    break unless user_config[:cyclic]
+   sleep(user_config[:sleep])
 end
 
